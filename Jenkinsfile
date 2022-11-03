@@ -3,6 +3,13 @@ pipeline {
     tools {
   terraform 'Terraform'
 }
+    stages {
+        stage {
+            agent {
+                docker { image 'node:latest' }
+            }
+        }
+    }
 
 
     stages {
