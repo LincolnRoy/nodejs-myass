@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Git checkout') {
            steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/gogineniprathyusha/Docker-nodejs.git'
+                git branch: 'main', credentialsId: '6dab4611-fc67-4d25-aa00-8e0e207f3c83', url: 'https://github.com/LincolnRoy/nodejs-myass.git'
             }
         }
         
