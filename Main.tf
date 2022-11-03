@@ -23,5 +23,5 @@ resource "aws_instance" "NODEJS" {
 tags = { 
     Name = "NODEJS" 
     } 
-    user_data = file("jenkinfile") 
+    user_data = file("Dockerfile") 
     }
