@@ -14,14 +14,14 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-resource "aws_instance" "NODEJS" {
+resource "aws_instance" "jenkinserver" {
      ami = "ami-09d3b3274b6c5d4aa" 
      instance_type = "t2.micro" 
      key_name = "practicekp" 
      security_groups = ["launch-wizard-1"]
 
 tags = { 
-    Name = "NODEJS" 
+    Name = "NODEJS-Server" 
     } 
-    user_data = file("index.js") 
+    user_data = file("docker.sh") 
     }
