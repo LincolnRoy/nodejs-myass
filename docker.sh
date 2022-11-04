@@ -11,4 +11,4 @@ chmod +x /usr/local/bin/docker-compose
 git clone https://github.com/LincolnRoy/nodejs-myass.git
 cd /nodejs-myass/
 docker build -t roy-pracnode .
-docker run -d -t p 3030:3030 roy-pracnode
+docker run -d -t -p 3030:3030 roy-pracnode
